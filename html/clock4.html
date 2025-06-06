@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The clock practise with the forth time</title>
+    <style>
+        h1,
+        p{
+            text-align: center;
+        }
+
+        span{margin-left: 33%;}
+    </style>
+</head>
+
+<body>
+    <h1>The current time is:</h1><span id="time"></span>
+    <p>This is the website which tells you about the time for different countries on the basis of the equator.</p>
+
+    <script>
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+
+        
+setInterval(() => {
+    
+    let a;
+    let date;
+    let time;
+    a = new Date( undefined, options);
+            date = a.toLocaleDateString();
+            time = a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds();
+            document.getElementById('time').innerHTML = time + "   on  " + date;
+
+            
+        }, 1000);
+    </script>
+</body>
+
+</html>

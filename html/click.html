@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick</title>
+
+</head>
+<body>
+    <div class="click">
+        Name:<input type="text" placeholder="Enter your name please!" id="wow">
+        <button onclick="so()">
+            Okay!
+        </button>
+    </div>
+    <div class="name1">
+
+    </div>
+
+    
+</body>
+<script type="text/javascript">
+    function so(){
+        var name= document.getElementById('wow').value;
+        var hence= "Hello, "  + name;
+        document.getElementsByClassName('name1')[0].innerHTML= hence;
+        
+    }
+
+</script>
+</html>

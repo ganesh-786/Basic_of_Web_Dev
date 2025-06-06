@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is the clock practise of the clock </title>
+</head>
+<body>
+    <h1>The current time is:</h1><span id="time"></span>
+    <p>The different time of the different countries of the world is shown are given in this website.</p>
+
+    <script>
+
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+        
+        setInterval(() => {
+            
+            let a;
+            let time;
+            let date;
+            
+            a = new Date(undefined,options);
+            time = a.getHours()+":"+a.getMinutes()+":"+a.getSeconds();
+            date = a.toLocaleDateString();
+            document.getElementById('time').innerHTML = time + "   on   "+ date;
+
+    }, 1000);
+        
+        </script>
+</body>
+</html>

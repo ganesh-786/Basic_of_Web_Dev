@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The clock revision</title>
+</head>
+<style>
+  h1 {
+    text-align: center;
+  }
+
+  span {
+    margin-left: 30%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+</style>
+
+<body>
+  <header>
+    <div class="clock">
+      <h1>The current time is: </h1>
+      <span id="time">
+      </span>
+    </div>
+  </header>
+
+  <script>
+
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+    setInterval(() => {
+      
+    
+    let a;
+    let time;
+    let date;
+
+    a = new Date();
+    date = a.toLocaleDateString(undefined, options);
+    time = a.getHours()+":"+a.getMinutes()+":"+a.getSeconds();
+    document.getElementById('time').innerHTML = time + "  on   " + date;
+  }, 1000);
+  </script>
+
+</body>
+
+</html>

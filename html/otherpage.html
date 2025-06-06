@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Other Page</title>
+</head>
+<body>
+  <h1>Profile Details</h1>
+  <div id="profile-details">
+    <!-- Profile details will be inserted here -->
+  </div>
+
+  <script>
+    // JavaScript code
+    // Retrieve profile data from local storage
+    var profileData = JSON.parse(localStorage.getItem('profile'));
+
+    // Display profile details on the other page
+    var profileDetails = document.getElementById('profile-details');
+    profileDetails.innerHTML = `
+      <img src="${profileData.profilePicture}" alt="Profile Picture" width="200px" height="250px">
+      <p>Name: ${profileData.name}</p>
+      <p>Phone Number: ${profileData.phone}</p>
+      <p>Email: ${profileData.email}</p>
+      <p>Address: ${profileData.address}</p>
+    `;
+
+    // Clear profile data from local storage (optional)
+    localStorage.removeItem('profile');
+  </script>
+</body>
+</html>

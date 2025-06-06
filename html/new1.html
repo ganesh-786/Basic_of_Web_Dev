@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customer Profile</title>
+  <style>
+    /* CSS styles */
+    .profile-container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .profile-picture {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .edit-button {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-container">
+    <img src="default-profile-picture.jpg" alt="Profile Picture" class="profile-picture" id="profile-picture">
+    <button class="edit-button" onclick="changeProfilePicture()">Edit Picture</button>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required><br>
+
+      <label for="address">Address:</label>
+      <textarea id="address" placeholder="Enter your address" required></textarea><br>
+
+      <button type="submit" onclick="saveProfile(event)">Save</button>
+    </form>
+  </div>
+
+  <script>
+    // JavaScript code
+    function changeProfilePicture() {
+      // Code to implement the picture change functionality
+      // You can use this function to open a file picker or perform any other relevant action
+    }
+
+    function saveProfile(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Get updated profile information
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const email = document.getElementById('email').value;
+      const address = document.getElementById('address').value;
+
+      // Save profile information in localStorage
+      localStorage.setItem('name', name);
+      localStorage.setItem('phone', phone);
+      localStorage.setItem('email', email);
+      localStorage.setItem('address', address);
+
+      // Redirect to the profile page
+      window.location.href = 'profile.html';
+    }
+  </script>
+</body>
+</html>

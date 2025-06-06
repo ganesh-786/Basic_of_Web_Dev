@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pracitse on the javascript</title>
+</head>
+
+<body>
+    <h1>Welcome to the javascript</h1>
+    <button id="clicked">click me</button>
+    <script>
+        // document.getElementsByTagName('h1')[0].innerHTML = "Hello, world? Do you want to know about me>";
+
+        // document.getElementById('clicked').innerHTML = "Fuck you!";
+        // document.getElementsByTagName('h1')[0].style.backgroundColor = 'cyan';
+        // document.getElementById('clicked').style.backgroundColor = 'lightgreen';
+        // document.getElementById('clicked').style.borderRadius = "4px";
+
+        // function klick() {
+        //     console.log("the button has been clicked");
+        // }
+        let a = [1, 2, 3, 4, "a", "symbol"];
+
+        // document.getElementsByTagName('h1')[0].innerHTML = a[5];
+        // let z = a.length;
+        // let p = a.pop(Symbol);
+        // let q = a.push("Ram");
+        // // let e= a. push("Ram");
+        // // let ap= a. unshift("Ram");
+        // let ele = a.sort();
+
+        for (let i = 0; i < a.length; i++) {
+            console.log(a[i]);
+            
+        }
+
+        localStorage.setItem('Harry', 'Ram');
+        localStorage.getItem('Harry');
+
+        function avg(a,b){
+            c = (a+b)/2;
+            return c;
+        }
+        c1 =avg(4,4);
+        c2 = avg(6,8);
+        console.log("The average of the given data is:", c1);
+        console.log("The another average of the another given data is:",c2);
+        document.getElementsByTagName('h1')[0].style.backgroundColor = 'cyan';
+
+        
+
+        // addEventListener("click", function () {
+        //     console.log("The mouse has been clicked.")
+        // })
+
+        // addEventListener("mouseover", function () { 
+        //     console.log("the mouse is on the click background");
+        // })
+
+        // let previous = addEventListener("mouseup", function () {
+        //     console.log("the mouse is clicked just now!");
+        // })
+
+        // let putdown = addEventListener("mousedown", function () {
+        //     console.log("the mouse has been just released!")
+        // })
+
+
+    </script>
+</body>
+
+</html>

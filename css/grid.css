@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    /* height: 500px; */
+    /* width: 580px; */
+    display: grid;
+    /* grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px; */
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5px;
+    column-gap: 5px;
+    
+
+}
+
+.item {
+    background-color: darkgreen;
+    color: red;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    
+    /* height:80px;
+    width: 80px; */
+}
+
+.item1 {
+    background-color: darkblue;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 50px;
+    text-align: center;
+    color: darkorange;
+}
+.item2 {
+    background-color: darkblue;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 50px;
+    text-align: center;
+    color: lightgreen;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

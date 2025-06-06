@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nic Asia</title>
+    <style>
+        body {
+            background-image: url('plainred.jpg');
+            background-attachment: fixed;
+        }
+
+        .nic {
+            width: 100%;
+            height: 80px;
+            margin: 0;
+            background-color: red;
+            position: sticky;
+            top: 5px;
+
+
+        }
+
+        .nic h1 {
+
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            text-decoration: solid;
+        }
+
+        #navbar li {
+
+            display: inline;
+
+        }
+
+
+        a:hover {
+            color: green;
+        }
+
+        a:active {
+            color: darkorange;
+        }
+
+        .for {
+            background-color: rgb(244, 202, 175);
+            /* font-family: 'Times New Roman', Times, serif; */
+
+        }
+
+        .for input {
+            display: block;
+            width: 500px;
+
+        }
+
+        #sub {
+            margin-left: 50%;
+            width: 100px;
+        }
+
+        /* #select {
+            float: left;
+        }
+
+        #pay {
+            float: left;
+        } */
+        .reference {
+            background-color: rgb(236, 28, 28);
+            width: 33.33%;
+            height: 200px;
+            float: left;
+            box-sizing: border-box;
+            text-align: justify;
+
+        }
+
+        /* The text ca=n be rearranged anywhere in the box of the class. Only the background image or the background things can be rearranged (top, bottom, left, right, top center and so on). */
+        .reference1 {
+
+            padding-left: 33.33px;
+            background-color: rgb(236, 28, 28);
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .reference h2,
+        .reference h3,
+        .reference h4 {
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: solid;
+            margin-left: 33px;
+        }
+
+        /* .another {
+            background-color: rgb(219, 19, 19);
+            width: 50%;
+            height:500px;
+            float: right;
+        } */
+        .para {
+            text-align: justify;
+            background-color: rgb(236, 28, 28);
+           
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nic">
+            <nav id="navbar">
+
+                <h1> Nic Asia</h1>
+                <ul type="none">
+                    <li><a href="https://www.nicasiabank.com/online-applications">Home</a></li>
+                    <li><a href="https://www.nicasiabank.com/current-vacancies">Current-vacancies</a></li>
+                    <li><a href="https://www.nicasiabank.com/atm">Nearest atm</a></li>
+                    <li><a href="https://www.nicasiabank.com/contact-us">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="for">
+                <form action="form.php">
+                    Name:<input type="text" placeholder="Enter full name">
+                    Roll no.: <input type="text" name="roll" id="roll" placeholder="Enter your unique roll number">
+                    Year/Semester: <input type="text" name="sem" id="sem" placeholder="Enter as requested">
+                    Back exam: <select class="select" id="select">
+                        <option value="select the option" aria-placeholder="">Select</option>
+                        <option value="option 1">2nd year/1st part</option>
+                        <option value="option 2">3rd year/1st part</option>
+                    </select><br>
+                    Email: <input type="email" placeholder="Enter your email">
+                    Date of birth: <input type="date" name="date" id="date">
+                    Payment: <select name="pay" id="pay">
+                        <option value="pay"><b>Select pay method</b></option>
+                        <option value="esewa"><button>Esewa</button></option>
+                        <option value="khalti"><button>Khalti</button></option>
+                    </select>
+                    <input type="submit" id="sub">
+                </form>
+            </div>
+        </section>
+        <section>
+            <div class="reference">
+                <h2>Online services</h2>
+                <ul type="disc">
+                    <li><a href="https://itouch.nicasiabank.com/login.xhtml?faces-redirect=true"><b>Internet
+                                banking</b></a></li>
+                    <li><a href="https://www.nicasiabank.com/online-services-footer/security-tips"><b>Security
+                                tips</b></a></li>
+                    <li><a href="https://www.nicasiabank.com/demat-request"><b>Demat account opening</b></a></li>
+                    <li><a href="https://www.nicasiabank.com/online-services-footer/nic-asia-calendar"><b>Nic asia
+                                calender</b></a></li>
+                </ul>
+            </div>
+            <div class="reference">
+                <h3>About us</h3>
+                <ul type="disc">
+                    <li><a href="https://www.nicasiabank.com/about-us/brand-assets"><b>Brand assets</b></a></li>
+                    <li><a href="https://www.nicasiabank.com/about-us/privacypolicy"><b>Privacy & policy</b></a></li>
+                    <li><a href="https://www.nicasiabank.com/about-us/iso-27001-certificate"><b>Certificates</b></a>
+                    </li>
+                    <li><a
+                            href="https://www.nicasiabank.com/assets/backend/uploads/achievment/Awards%20&%20Accolades%20A3.pdf"><b>Achievements</b></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="reference">
+                <h4>Support</h4>
+                <ul type="disc">
+                    <li><a href="https://helpdesk.nicasiabank.com/support/home"><b>Home</b></a></li>
+                    <li><a href="https://www.nicasiabank.com/support/tender"><b>Tender</b></a></li>
+                    <li><a href="https://www.nicasiabank.com/contact-us"><b>Contact us</b></a></li>
+                    <li><a href="https://www.nicasiabank.com/downloads"><b>Downloads</b></a></li>
+                </ul>
+            </div>
+            <div class="reference1">
+                <div class="move">
+                    <h5>@copyright 2080, as per the law of Act</h5>
+                </div>
+            </div>
+
+    </main>
+    <section>
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis quo in fugit deleniti nostrum
+                mollitia voluptatem omnis sapiente voluptate reiciendis error illo dicta, a autem odit nam ipsam.
+                Officiis, perspiciatis. Sunt ea eos perspiciatis et accusamus voluptas? Est, nulla vel ratione vitae
+                saepe modi omnis laudantium temporibus quidem ea tenetur quas ad aliquid asperiores magni quibusdam
+                deleniti incidunt ullam alias, facilis inventore necessitatibus aspernatur eius? Quos voluptate dicta,
+                accusamus deleniti autem saepe voluptates ipsam, nostrum a quas iure odio maiores quidem voluptas quam
+                iusto repellat delectus commodi laborum officia, consequatur alias! Libero, dolor vel? Magnam animi
+                incidunt sed autem vitae nostrum, cum aperiam a delectus, beatae sequi nobis ipsa, maxime fugiat
+                voluptas quos tenetur. Dolore quia exercitationem aperiam sint facilis, voluptatum ducimus illo ea totam
+                commodi fugit, tempore dicta eos non magni veniam voluptatem ex. Inventore soluta, delectus voluptas
+                quibusdam minima recusandae explicabo a necessitatibus harum hic nesciunt illo placeat amet, architecto
+                repellendus doloremque quia! Voluptate minima fuga veritatis quisquam aperiam eligendi optio saepe illum autem vel architecto veritatis voluptates rerum.</p>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

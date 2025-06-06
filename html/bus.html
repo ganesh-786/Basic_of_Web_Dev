@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-info">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/pic/carL.png" alt="carlogo" width="40px" height="40px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/html/carproject.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Locations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacts</a>
+                        </li>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-success dropdown-toggle"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Imported Cars' Collection
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Car Sample 1</a></li>
+                                <li><a class="dropdown-item" href="#">Car Sample 2</a></li>
+                                <li><a class="dropdown-item" href="#">Car Sample 3</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Other old collection of car</a></li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-danger dropdown-toggle"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Special Offers
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Buy one Get one free</a></li>
+                                <li><a class="dropdown-item" href="#">Free washing services</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Please, do visit again. Namaste!</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-warning" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="mx-2">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                    data-bs-target="#LoginModal">Login</button>
+
+            </div>
+            <div class="mx-2">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                    data-bs-target="#signupModal">Signup</button>
+            </div>
+        </nav>
+
+
+
+        <!-- Login Modal -->
+        <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-success">Login</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Sign up Modal -->
+        <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Sign up</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputPassword4" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress2" class="form-label">Address 2</label>
+                                <input type="text" class="form-control" id="inputAddress2"
+                                    placeholder="Apartment, studio, or floor">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputCity" class="form-label">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputState" class="form-label">District</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>Banke</option>
+                                    <option>Bardiya</option>
+                                    <option>Tanahun</option>
+                                    <option>Saptari</option>
+                                    <option>Sunsari</option>
+                                    <option>Hetauda</option>
+
+
+
+
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="inputZip" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Check me out
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <hr>
+        <br><br><br>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <h3>Rent now!<span class="badge rounded-pill text-bg-danger">Offers</span></h3>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+
+                        <div class="container px-4 py-5" id="custom-cards">
+                            <h2 class="pb-2 border-bottom">Special Offers on Tihar<span
+                                    class="badge rounded-pill text-bg-danger">New</span></h2>
+
+                            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                                <div class="col">
+                                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                                        style="background-image: url('/pic/rice.png');">
+                                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Rice cutting machine</h3>
+                                            <ul class="d-flex list-unstyled mt-auto">
+                                                <li class="me-auto">
+                                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32"
+                                                        height="32" class="rounded-circle border border-white">
+                                                </li>
+                                                <li class="d-flex align-items-center me-3">
+                                                    <svg class="bi me-2" width="1em" height="1em">
+                                                        <use xlink:href="#geo-fill"></use>
+                                                    </svg>
+                                                    <big>Imported from China</big>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <svg class="bi me-2" width="1em" height="1em">
+                                                        <use xlink:href="#calendar3"></use>
+                                                    </svg>
+                                                    <small>3days ago</small>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                                        style="background-image: url('/pic/toolbox.png');">
+                                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Tools: all in one
+                                            </h3>
+                                            <ul class="d-flex list-unstyled mt-auto">
+                                                <li class="me-auto">
+                                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32"
+                                                        height="32" class="rounded-circle border border-white">
+                                                </li>
+                                                <li class="d-flex align-items-center me-3">
+                                                    <svg class="bi me-2" width="1em" height="1em">
+                                                        <use xlink:href="#geo-fill"></use>
+                                                    </svg>
+                                                    <big>Imported from Japan</big>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <svg class="bi me-2" width="1em" height="1em">
+                                                        <use xlink:href="#calendar3"></use>
+                                                    </svg>
+                                                    <small>4days ago</small>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                                        style="background-image: url('/pic/spade.png');">
+                                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Spade: qualitative work in
+                                                Nepal</h3>
+                                            <ul class="d-flex list-unstyled mt-auto">
+                                                <li class="me-auto">
+                                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32"
+                                                        height="32" class="rounded-circle border border-white">
+                                                </li>
+                                                <li class="d-flex align-items-center me-3">
+                                                    <svg class="bi me-2" width="1em" height="1em">
+                                                        <use xlink:href="#geo-fill"></use>
+                                                    </svg>
+                                                    <big>Imported from India</big>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <svg class="bi me-2" width="1em" height="1em">
+                                                        <use xlink:href="#calendar3"></use>
+                                                    </svg>
+                                                    <small>5days ago</small>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </code> class. This is the first page for the Car rental body.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container px-4 py-5">
+                <h2 class="pb-2 border-bottom">Bus</h2>
+                <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+                    <div class="col d-flex flex-column align-items-start gap-2">
+                        <img src="/pic/bus1.jpg" class="img-fluid" alt="bus">
+                        <p class="text-bg-light">
+                            We believe to give our customer the best quality for each and every vehicle.
+                        </p>
+
+                        <a href="/html/checkout.html" class="btn btn-primary btn-lg">Book Now</a>
+                    </div>
+
+                    <div class="col">
+                        <div class="row row-cols-1 row-cols-sm-2 g-4">
+                            <div class="col d-flex flex-column gap-2">
+
+                                <img src="/pic/type1.png" class="img-fluid" alt="type" width="50px" height="50px">
+
+                                <h4 class="fw-semibold mb-0 text-body-emphasis">Type</h4>
+                                <p class="text-body-secondary">SUV (Sport Utility Vehicle)</p>
+                            </div>
+
+                            <div class="col d-flex flex-column gap-2">
+
+                                <img src="/pic/capacity.png" class="img-fluid" alt="Capacity" width="50px" height="50px">
+
+                                <h4 class="fw-semibold mb-0 text-body-emphasis">Capacity</h4>
+                                <p class="text-body-secondary">Typically, it has seating for 7 passengers.</p>
+                            </div>
+
+                            <div class="col d-flex flex-column gap-2">
+                                <img src="/pic/rental duration.webp" class="img-fluid" alt="rental duration" width="75px" height="75px">
+
+                                <h4 class="fw-semibold mb-0 text-body-emphasis">Rental Duration</h4>
+                                <p class="text-body-secondary">The duration is exactly 1-week.</p>
+                            </div>
+
+                            <div class="col d-flex flex-column gap-2">
+
+                                <img src="/pic/fuel1.png" class="img-fluid" alt="Fuel" width="50px" height="50px">
+
+                                <h4 class="fw-semibold mb-0 text-body-emphasis">Fuel Policy</h4>
+                                <p class="text-body-secondary">The vehicle is given to you with 1-litre filled.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          
+
+
+
+
+
+
+
+            <footer class="footer mt-auto py-1 bg-body-tertiary fixed-bottom">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            <p>© 2017–2023 Company, Inc.</p>
+                        </div>
+                        <div class="col">
+                            <a href="#">Back to Top</a>
+                        </div>
+                        <div class="col">
+                            <a href=""><img src="/pic/twitter.png" alt="twitter" width="30px" height="30px"></a>
+                            <a href=""><img src="/pic/facebook - Copy.png" alt="facebook" width="30px"
+                                    height="30px"></a>
+                            <a href=""><img src="/pic/whatsapp.webp" alt="whatsapp" width="40px" height="40px"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </footer>
+
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                crossorigin="anonymous">
+
+                </script>
+</body>
+
+</html>

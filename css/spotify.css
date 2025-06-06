@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+
+
+}
+
+nav ul li img {
+    padding: 0px 0px 0px 15px;
+}
+
+nav ul li {
+    display: flex;
+    margin: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+
+span {
+    margin-top: 14px;
+    padding-left: 2.5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 16.79vh;
+}
+
+#songseek {
+    width: 50vw;
+}
+
+.container {
+    height: 74vh;
+    color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 5px;
+    background-image: url('/pic/l.jpg');
+    background-size: cover;
+}
+
+.icons button {
+    width: 40px;
+    height: 40px;
+
+}
+
+.songitems {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-top: 4px;
+    
+}
+
+.songitems img {
+    border-radius: 15px;
+}
+
+h3 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#play {
+    background-color: green;
+    border-radius: 10px;
+}
